@@ -1,0 +1,72 @@
+@fontePrincipal: fagun, sans-serif;
+@fonteDoTitulo: verveine, sans-serif;
+@corDoTexto:#fff;
+@corDoFundo: #c0392b;
+@corDoBotao: #16a085;
+@corDoBotaoHover: #1abc9c;
+@corDoResultado: #f1c40f;
+
+body {
+    background-color: @corDoFundo;
+    font-family: @fontePrincipal;
+    color: @corDoTexto;
+}
+
+h1 {
+    font-family: @fonteDoTitulo;
+    font-size: 3em;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 8px;
+    background-color: @corDoBotao;
+    color: @corDoTexto;
+    border: none;
+    font-family: @fontePrincipal;
+    margin-top: 12px;
+
+    &:hover {
+        background-color: @corDoBotaoHover
+    }
+}
+
+input {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    border: none;
+    max-width: 120px;
+    background-color: transparent;
+    text-align: center;
+    color: @corDoTexto;
+    border-bottom: #fff solid 2px;
+}
+
+.resultado {
+    max-width: 960px;
+    padding: 16px;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 1.2em;
+    border: #fff dotted 8px;
+    border-radius: 50px;
+
+    span {
+        font-weight: bold;
+        font-size: 2em;
+        color:@corDoResultado;
+        display: block;
+    }
+}
